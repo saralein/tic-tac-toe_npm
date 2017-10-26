@@ -1,0 +1,17 @@
+{
+  "name": "gamesgames",
+  "version": "1.2.0",
+  "description": "Tic Tac Toe in Clojure",
+  "main": "",
+  "bin": {
+    "gamesgames:play": "bin/play.js",
+    "gamesgames:update": "bin/update.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "author": "",
+  "repository": "",
+  "license": "ISC",
+  "preferGlobal": true
+}
