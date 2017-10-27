@@ -1,6 +1,6 @@
 {
   "name": "gamesgames",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Tic Tac Toe in Clojure",
   "main": "",
   "bin": {

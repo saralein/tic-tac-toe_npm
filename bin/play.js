@@ -3,10 +3,13 @@
 let path = require('path')
 let exec = require('child_process').exec;
 
+let os = process.platform;
+let windows = 'win32';
+let clearCmd = os === windows ? 'cls' : 'clear';
 let filepath = path.join(__dirname, '/tic-tac-toe.jar');
-let cmd = 'java -jar ' + filepath;
+let jarCmd = 'java -jar ' + filepath;
 
-let child = exec(cmd, {async: true});
+let child = exec(jarCmd, {async: true});
 
 child.stdout.on('data', (data) => {
     console.log(data)
@@ -26,11 +29,11 @@ process.stdin.on('readable', () => {
 });
 
 process.on('SIGINT', () => {
-    exec('clear')
+    exec(clearCmd)
 });
 
 process.on('SIGTERM', () => {
-    exec('clear')
+    exec(clearCmd)
 });
 
 child.on('close', function(code) {
