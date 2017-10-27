@@ -4,7 +4,7 @@ A Tic Tac Toe Console Application
 
 ## Setup
 
-New users can begin by installing npm.
+New users can begin by [installing npm](http://blog.npmjs.org/post/85484771375/how-to-install-npm).
 
 Once npm is installed, download the game using `npm install -g gamesgames`.
 
